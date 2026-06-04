@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Académica Inteligente - Arquitectura de Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>📚 GAI</h2>
+
+        <nav>
+            <a href="#inicio">🏠 Inicio</a>
+            <a href="#problema">🎯 Problema</a>
+            <a href="#solucion">💡 Solución</a>
+            <a href="#usuarios">👥 Usuarios</a>
+            <a href="#funcionalidades">⚙️ Funcionalidades</a>
+            <a href="#esc1">⚡ Rendimiento</a>
+            <a href="#esc2">🛡️ Seguridad</a>
+            <a href="#esc3">📶 Disponibilidad</a>
+            <a href="#esc4">🔔 Confiabilidad</a>
+            <a href="#esc5">📈 Escalabilidad</a>
+            <a href="#tacticas">🏗️ Tácticas</a>
+            <a href="#tradeoffs">⚖️ Trade-Offs</a>
+            <a href="#c4nivel1">📋 C4 Nivel 1</a>
+            <a href="#c4nivel2">🗂️ C4 Nivel 2</a>
+            <a href="#c4nivel3">🧩 C4 Nivel 3</a>
+            <a href="#conclusion">✅ Conclusiones</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+
+        <!-- Hero -->
+        <section id="inicio" class="hero">
+            <h1>Gestión Académica Inteligente</h1>
+            <p>
+                Plataforma móvil inteligente para centralizar automáticamente
+                actividades académicas obtenidas desde Microsoft Outlook y
+                Microsoft Teams mediante Inteligencia Artificial.
+            </p>
+
+            <div class="badges">
+                <span>⚡ Rendimiento</span>
+                <span>🛡️ Seguridad</span>
+                <span>📶 Disponibilidad</span>
+                <span>🔔 Confiabilidad</span>
+                <span>📈 Escalabilidad</span>
+            </div>
+        </section>
+
+        <!-- Problema -->
+        <section id="problema">
+            <h2>🎯 Problema Identificado</h2>
+
+            <div class="card">
+                <p>
+                    Los estudiantes del ITM reciben diariamente una gran cantidad
+                    de correos electrónicos institucionales y notificaciones de
+                    Microsoft Teams.
+                </p>
+
+                <p>
+                    Dentro de estos mensajes existen actividades académicas,
+                    evaluaciones, reuniones y fechas de entrega importantes que
+                    suelen pasar desapercibidas debido a la saturación de
+                    información.
+                </p>
+
+                <ul>
+                    <li>Olvido de entregas académicas.</li>
+                    <li>Retrasos en actividades importantes.</li>
+                    <li>Pérdida de oportunidades académicas.</li>
+                    <li>Desorganización y sobrecarga cognitiva.</li>
+                    <li>Dificultad para centralizar información.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Solución -->
+        <section id="solucion">
+            <h2>💡 Solución Propuesta</h2>
+
+            <div class="card">
+                <p>
+                    Se propone una aplicación móvil inteligente capaz de analizar
+                    automáticamente correos institucionales y tareas de Microsoft
+                    Teams utilizando Inteligencia Artificial.
+                </p>
+
+                <div class="flow">
+                    <div>📧 Microsoft Graph</div>
+                    <div>⬇</div>
+                    <div>🤖 IA</div>
+                    <div>⬇</div>
+                    <div>📋 Gestor de Tareas</div>
+                    <div>⬇</div>
+                    <div>📅 Calendario</div>
+                    <div>⬇</div>
+                    <div>🔔 Notificaciones</div>
+                    <div>⬇</div>
+                    <div>👨‍🎓 Estudiante</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usuarios -->
+        <section id="usuarios">
+            <h2>👥 Usuarios y Sistemas Externos</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <h3>👨‍🎓 Estudiante</h3>
+                    <ul>
+                        <li>Consultar tareas.</li>
+                        <li>Gestionar estados.</li>
+                        <li>Visualizar calendario.</li>
+                        <li>Recibir recordatorios.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>📧 Microsoft Graph API</h3>
+                    <p>Obtiene correos y actividades desde Outlook y Teams.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📱 WhatsApp API</h3>
+                    <p>Permite enviar recordatorios automáticos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🤖 Servicio IA</h3>
+                    <p>Analiza correos y extrae información relevante.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section id="funcionalidades">
+            <h2>⚙️ Funcionalidades Principales</h2>
+
+            <div class="card">
+                <ol>
+                    <li>Inicio de sesión institucional.</li>
+                    <li>Integración con Microsoft Graph.</li>
+                    <li>Procesamiento inteligente de correos.</li>
+                    <li>Extracción de fechas y actividades.</li>
+                    <li>Creación automática de tareas.</li>
+                    <li>Gestión CRUD de tareas.</li>
+                    <li>Cambio de estados.</li>
+                    <li>Calendario académico inteligente.</li>
+                    <li>Notificaciones push.</li>
+                    <li>Recordatorios por WhatsApp.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Escenario 1 -->
+        <section id="esc1">
+            <h2>⚡ Escenario Arquitectónico 1</h2>
+
+            <div class="scenario-card">
+                <h3>Procesamiento automático mediante IA</h3>
+
+                <p><strong>Atributo:</strong> Rendimiento</p>
+                <p><strong>Estímulo:</strong> Recepción de nuevo correo académico.</p>
+                <p><strong>Respuesta:</strong> Crear automáticamente una tarea.</p>
+
+                <div class="metric">
+                    ⏱️ ≤ 5 segundos para el 95% de los correos
+                </div>
+
+                <ul>
+                    <li>Cola de mensajes.</li>
+                    <li>Procesamiento asíncrono.</li>
+                    <li>Background Jobs.</li>
+                    <li>Cache.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Escenario 2 -->
+        <section id="esc2">
+            <h2>🛡️ Escenario Arquitectónico 2</h2>
+
+            <div class="scenario-card">
+                <h3>Seguridad de acceso</h3>
+
+                <p><strong>Atributo:</strong> Seguridad</p>
+                <p><strong>Estímulo:</strong> Intento de acceso no autorizado.</p>
+                <p><strong>Respuesta:</strong> Bloqueo y auditoría.</p>
+
+                <div class="metric">
+                    🔒 100% de solicitudes autenticadas
+                </div>
+
+                <ul>
+                    <li>OAuth 2.0.</li>
+                    <li>JWT.</li>
+                    <li>RBAC.</li>
+                    <li>TLS/HTTPS.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Escenario 3 -->
+        <section id="esc3">
+            <h2>📶 Escenario Arquitectónico 3</h2>
+
+            <div class="scenario-card">
+                <h3>Disponibilidad</h3>
+
+                <div class="metric">
+                    📊 99.5% disponibilidad mensual
+                </div>
+
+                <ul>
+                    <li>Balanceador de carga.</li>
+                    <li>Health Checks.</li>
+                    <li>Réplicas.</li>
+                    <li>Recuperación automática.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Escenario 4 -->
+        <section id="esc4">
+            <h2>🔔 Escenario Arquitectónico 4</h2>
+
+            <div class="scenario-card">
+                <h3>Confiabilidad de recordatorios</h3>
+
+                <div class="metric">
+                    📩 95% de entregas exitosas
+                </div>
+
+                <ul>
+                    <li>Retry Pattern.</li>
+                    <li>Circuit Breaker.</li>
+                    <li>Persistencia de eventos.</li>
+                    <li>Message Queue.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Escenario 5 -->
+        <section id="esc5">
+            <h2>📈 Escenario Arquitectónico 5</h2>
+
+            <div class="scenario-card">
+                <h3>Escalabilidad</h3>
+
+                <div class="metric">
+                    🚀 2.000 estudiantes activos
+                </div>
+
+                <ul>
+                    <li>Cache.</li>
+                    <li>Balanceo de carga.</li>
+                    <li>Indexación BD.</li>
+                    <li>Escalamiento vertical.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tácticas -->
+        <section id="tacticas">
+            <h2>🏗️ Tácticas Arquitectónicas</h2>
+
+            <div class="grid">
+
+                <div class="card">⚡ Cache</div>
+                <div class="card">📨 Message Queue</div>
+                <div class="card">🔄 Retry Pattern</div>
+                <div class="card">🛑 Circuit Breaker</div>
+                <div class="card">🔐 OAuth 2.0</div>
+                <div class="card">🎫 JWT</div>
+                <div class="card">⚖️ Load Balancer</div>
+                <div class="card">❤️ Health Checks</div>
+
+            </div>
+        </section>
+
+        <!-- Trade Offs -->
+        <section id="tradeoffs">
+            <h2>⚖️ Trade-Offs Arquitectónicos</h2>
+
+            <table>
+                <tr>
+                    <th>Decisión</th>
+                    <th>Beneficio</th>
+                    <th>Costo</th>
+                </tr>
+
+                <tr>
+                    <td>Cache</td>
+                    <td>Mayor velocidad</td>
+                    <td>Datos potencialmente desactualizados</td>
+                </tr>
+
+                <tr>
+                    <td>Message Queue</td>
+                    <td>Mayor rendimiento</td>
+                    <td>Más complejidad</td>
+                </tr>
+
+                <tr>
+                    <td>OAuth 2.0</td>
+                    <td>Mayor seguridad</td>
+                    <td>Autenticación más compleja</td>
+                </tr>
+
+                <tr>
+                    <td>Load Balancer</td>
+                    <td>Alta disponibilidad</td>
+                    <td>Mayor costo</td>
+                </tr>
+
+                <tr>
+                    <td>IA</td>
+                    <td>Automatización</td>
+                    <td>Dependencia externa</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- C4 -->
+        <section id="c4nivel1">
+            <h2>📋 C4 Nivel 1 - Contexto</h2>
+
+            <img src="images/c4-contexto.png"
+                 alt="C4 Nivel 1"
+                 class="diagram">
+
+            <p>
+                Reemplazar esta imagen por el diagrama exportado desde Draw.io.
+            </p>
+        </section>
+
+        <section id="c4nivel2">
+            <h2>🗂️ C4 Nivel 2 - Contenedores</h2>
+
+            <img src="images/c4-contenedores.png"
+                 alt="C4 Nivel 2"
+                 class="diagram">
+
+            <p>
+                Reemplazar esta imagen por el diagrama exportado desde Draw.io.
+            </p>
+        </section>
+
+        <section id="c4nivel3">
+            <h2>🧩 C4 Nivel 3 - Componentes</h2>
+
+            <img src="images/c4-componentes.png"
+                 alt="C4 Nivel 3"
+                 class="diagram">
+
+            <p>
+                Reemplazar esta imagen por el diagrama exportado desde Draw.io.
+            </p>
+        </section>
+
+        <!-- Conclusión -->
+        <section id="conclusion">
+            <h2>✅ Conclusiones</h2>
+
+            <div class="card">
+                <p>
+                    La solución propuesta permite centralizar actividades
+                    académicas utilizando Inteligencia Artificial, mejorando la
+                    productividad de los estudiantes y reduciendo el riesgo de
+                    olvidar entregas importantes.
+                </p>
+
+                <p>
+                    La arquitectura integra tácticas orientadas a rendimiento,
+                    seguridad, disponibilidad, confiabilidad y escalabilidad,
+                    garantizando una plataforma robusta y preparada para el
+                    crecimiento futuro.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
